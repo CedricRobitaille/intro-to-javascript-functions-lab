@@ -15,19 +15,8 @@ const maxOfTwoNumbers = (x, y) => {
   }
 }
 
-// Better yet, this can be done with rest parameters!
-const maxOfNumbers = (...nums) => {
-  let topNum = 0;
-  for (num of nums) {
-    if (num > topNum) {
-      topNum = num;
-    }
-  }
-  return topNum;
-}
-
+// There is a better way to do this (using rest parameters), but we'll tackle that at Exercise #6.
 console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
-console.log('Exercise 1 Alt Result:', maxOfNumbers(1,2,3,4,5));
 
 
 
@@ -113,3 +102,29 @@ const greetUser = (name, time) => {
 }
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+
+
+
+
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+const maxOfThree = (...nums) => {
+  let topNum = 0;
+  for (num of nums) {
+    if (num > topNum) {
+      topNum = num;
+    }
+  }
+  return topNum;
+}
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
