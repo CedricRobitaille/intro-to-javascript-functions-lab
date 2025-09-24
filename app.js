@@ -33,7 +33,7 @@ Complete the exercise in the space below:
 */
 
 const isAdult = (age) => {
-  return (age >= 18) ? "Adult" : "Minor";
+  return (age >= 18) ? "Adult" : "Minor"; // If age >= 18, return adult, otherwise, return minor.
 }
 
 console.log('Exercise 2 Result:', isAdult(21));
@@ -55,8 +55,8 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (character) => {
-  let vowels = ["a", "e", "i", "o", "u"];
-  return (vowels.includes(character)) ? true : false;
+  let vowels = ["a", "e", "i", "o", "u"]; // documents all the available vowels.
+  return (vowels.includes(character)) ? true : false; // if the character provided is found within the vowels array, return true, otherwise, false.
 }
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
@@ -77,7 +77,7 @@ Complete the exercise in the space below:
 */
 
 const generateEmail = (name, domain) => {
-  return `${name}@${domain}`;
+  return `${name}@${domain}`; // Returns the name + "@" + domain
 }
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
@@ -98,7 +98,7 @@ Complete the exercise in the space below:
 */
 
 const greetUser = (name, time) => {
-  return `Good ${time}, ${name}!`
+  return `Good ${time}, ${name}!` // Returns "Good" + time + name + "!"
 }
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
